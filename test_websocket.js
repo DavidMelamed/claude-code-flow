@@ -82,7 +82,7 @@ async function testWebSocket() {
                         break;
                         
                     case 'error':
-                        console.log('❌ Error received:', message.data);
+                        console.error('❌ Error received:', message.data);
                         testResults.errors.push(message.data);
                         break;
                         
